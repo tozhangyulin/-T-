@@ -60,3 +60,33 @@ ul,ol{
   height: 900px;
   background-image: url(../imgs/b1_bg.jpg);
 }
+.first_center{
+  width: 1440px;
+  height: 100%;
+  margin: auto;
+  position: relative;
+}
+.first_center img:nth-child(1){
+  position: absolute;
+  bottom: 0px;
+}
+.first_center img:nth-child(2){
+  position: absolute;
+  bottom: 100px;
+  left: 170px;
+}
+.first_center img:nth-child(3){
+  position: absolute;
+  top: 300px;
+  right: 230px;
+}
+.first_center img:nth-child(4){
+  position: absolute;
+  top: 450px;
+  right: 155px;
+}
+.first_center img:nth-child(5){
+  position: absolute;
+  top: 480px;
+  right: 405px;
+}
