@@ -34,6 +34,7 @@ ul,ol{
   height: 60px;
   background-color:lightgreen;
   position: fixed; 
+  z-index: 999;
 }
 .nav{
   width: 1037px;
@@ -73,20 +74,144 @@ ul,ol{
 .first_center img:nth-child(2){
   position: absolute;
   bottom: 100px;
-  left: 170px;
+  left: 130px;
+  animation: moveone 2s forwards;
 }
+@-webkit-keyframes moveone {
+      0% {
+        left: 130px;
+        opacity: 0;
+      }
+      100% {
+        left: 170px;
+        opacity: 1;
+      }
+    }
 .first_center img:nth-child(3){
   position: absolute;
   top: 300px;
   right: 230px;
+  animation: opacityone 4s forwards;
 }
+@-webkit-keyframes opacityone {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
 .first_center img:nth-child(4){
   position: absolute;
-  top: 450px;
+  bottom: 340px;
   right: 155px;
+  animation: movetwo 2s;
+}
+@-webkit-keyframes movetwo {
+      0%{
+        bottom: 0px;
+      }
+      100%{
+        bottom:340px;
+      }
 }
 .first_center img:nth-child(5){
   position: absolute;
   top: 480px;
   right: 405px;
+  animation: opacitytwo 3s infinite;
+}
+@-webkit-keyframes opacitytwo {
+      0%{
+        opacity: 0;
+      }
+      50%{
+        opacity: 1;
+      }
+      100%{
+        opacity: 0
+      }
+}
+
+/*营销手段*/
+.yxsd{
+  width: 100%;
+  height: 900px;
+  background-image:url(../imgs/b2_bg.jpg); 
+}
+.yxsd_center{
+  width: 1310px;
+  height: 100%;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+.yxsd_center img:nth-child(1){
+  position: absolute;
+  left: -230px;
+  bottom: -70px;
+  animation: yundong1 4s forwards;
+}
+@-webkit-keyframes yundong1{
+      0%{
+       bottom: -400px;
+      }
+      100%{
+       bottom: -70px;
+      }
+}
+.yxsd_center img:nth-child(2){
+  position: absolute;
+  left: 290px;
+  top: 330px;
+  animation: yundong2 3s forwards;
+}
+@-webkit-keyframes yundong2{
+      0%{
+       top:0px;
+      }
+      100%{
+       top:330px;
+      }
+}
+.yxsd_center img:nth-child(3){
+  position: absolute;
+  left: 770px;
+  top: 425px;
+  animation: yundong3 3s forwards;
+}
+@-webkit-keyframes yundong3{
+      0%{
+       top:0px;
+      }
+      100%{
+       top:425px;
+      }
+}
+.yxsd_center img:nth-child(4){
+  position: absolute;
+  left: 1000px;
+  top: 425px;
+  animation: yundong3 3s forwards;
+}
+@-webkit-keyframes yundong3{
+      0%{
+       top:0px;
+      }
+      100%{
+       top:425px;
+      }
+}
+.yxsd_center .describe{
+  position: absolute;
+  left: 620px;
+  top: 420px;
+  color: white;
+  font-size: 14px;
+}
+.yxsd_center .describe span{
+  font-size:25px;
+  display: block;
+  position: relative;
+  top: -30px; 
 }
