@@ -150,7 +150,7 @@ ul,ol{
   position: absolute;
   left: -230px;
   bottom: -70px;
-  animation: yundong1 4s forwards;
+  animation: yundong1 3s forwards;
 }
 @-webkit-keyframes yundong1{
       0%{
@@ -214,4 +214,90 @@ ul,ol{
   display: block;
   position: relative;
   top: -30px; 
+}
+
+/*营销手段2*/
+.yxsdtwo{
+  width: 100%;
+  height: 900px;
+  background-image: url(../imgs/b3_bg.jpg);
+  position: relative;
+}
+.yxsdtwo_center{
+  width: 1310px;
+  height: 900px;
+  margin: auto;
+  position: relative;
+}
+.yxsdtwo_title{
+  position: absolute;
+  left: 440px;
+  top: 150px;
+  color: #666666;
+  font-size: 14px;
+  font-weight: bold;
+}
+.yxsdtwo_title p:nth-child(1){
+  font-size: 28px;
+}
+.yxsdtwo_title p:nth-child(1) span{
+  color: #fea005;
+}
+.yxsdtwo_title p:nth-child(2){
+  color: #bcbec0;
+  display: block;
+  position: relative;
+  top: 30px;
+  left: 30px;
+} 
+.yxsdtwo_center .xian{
+  border-bottom:1px solid #d3d3d3;
+  width: 973px;
+  position: absolute;
+  top: 250px;
+  left: 95px;
+}
+.yxsdtwo_center .word_left{
+  position: absolute;
+  top: 270px;
+  left: 200px;
+  text-align: right;
+  font-size: 12px;
+  color: #3f3e3c;
+}
+.yxsdtwo_center .word_left .words1 p:nth-child(1),.words2 p:nth-child(1),.words3 p:nth-child(1){
+  color: orange;
+  font-size: 16px;
+}
+.yxsdtwo_center .word_left .words1 ,.words2 ,.words3 {
+  margin-top: 50px;
+}
+.yxsdtwo_center .word_left .words1 p,.words2 p,.words3 p{
+  display: block;
+  margin-top: 10px;
+}
+.yxsdtwo_center .word_left .words2{
+  margin-right: 60px;
+}
+.yxsdtwo_center .word_right{
+  position: absolute;
+  top: 270px;
+  right: 200px;
+  text-align: left;
+  font-size: 12px;
+  color: #3f3e3c;
+}
+.yxsdtwo_center .word_right .words1 p:nth-child(1),.words2 p:nth-child(1),.words3 p:nth-child(1){
+  color: orange;
+  font-size: 16px;
+}
+.yxsdtwo_center .word_right .words1 ,.words2 ,.words3 {
+  margin-top: 50px;
+}
+.yxsdtwo_center .word_right .words1 p,.words2 p,.words3 p{
+  display: block;
+  margin-top: 10px;
+}
+.yxsdtwo_center .word_right .words2{
+  margin-left: 60px;
 }
