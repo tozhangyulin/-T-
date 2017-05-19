@@ -415,3 +415,55 @@ ul,ol{
             transform:rotateZ(0deg) translateX(0px) translateY(0px);
         }
     }
+/*服务优势*/
+.fwys{
+  width: 100%;
+  height: 900px;
+  background-image: url(../imgs/b4_bg.jpg);
+}
+.fwys_center{
+  width: 1310px;
+  height: 100%;
+  margin: auto;
+  position: relative;
+}
+.fwys_center .word{
+  position: absolute;
+  top: 220px;
+  left: 200px;
+  color: #eeeeee;
+  font-size: 16px;
+  font-weight: bold;
+}
+.fwys_center .word span:nth-child(1){
+  font-size: 2em;
+  font-weight: bold;
+}
+.fwys_center .word span:nth-child(3),span:nth-child(4),span:nth-child(5),span:nth-child(6){
+  display: block;
+  position: relative;
+  top:20px; 
+}
+.fwys_center .word span:nth-child(7){
+  display: block;
+  position: relative;
+  top:40px; 
+}
+.fwys_center .word span:nth-child(2) p:nth-child(1),span:nth-child(3) p:nth-child(1),span:nth-child(4) p:nth-child(1),span:nth-child(5) p:nth-child(1),span:nth-child(6) p:nth-child(1),span:nth-child(7) p:nth-child(1){
+  font-size: 12px;
+  font-weight: normal;
+  position: relative;
+  top: 5px;
+  animation: shangyi1 3s forwards;
+}
+.fwys_center .word span:nth-child(3) p:nth-child(2),span:nth-child(4) p:nth-child(2),span:nth-child(5) p:nth-child(2){
+  font-size: 12px;
+  font-weight: normal;
+  position: relative;
+  top: 5px;
+}
+.fwys_center .phone{
+  position: absolute;
+  right: 200px;
+  top: 200px;
+}
