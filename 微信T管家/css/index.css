@@ -971,9 +971,11 @@ ul,ol{
   display: inline-block;
   height: 45px;
   line-height: 45px;
-  font-size: 1.5em;
   margin-bottom: 30px;
   color: rgb(254,160,5);    
+}
+.sqjr .sqjr_center .login span{
+  font-size: 1.5em;
 }
 .sqjr .sqjr_center #logins{
   margin-bottom: 20px;
@@ -1008,7 +1010,11 @@ ul,ol{
 .sqjr .sqjr_center #Register{
   position: relative;
   left: 435px;
-  top: -200px;
+  top: -260px;
+}
+.sqjr .sqjr_center #Register span{
+  font-size: 1em;
+  color: rgb(160,160,160);
 }
 .sqjr .sqjr_center #Register #Register_id{
   display: block;
@@ -1048,6 +1054,26 @@ ul,ol{
   color: white;
   background: rgb(255, 165, 16);
 }
+ .fixed{
+            position: fixed;
+            right: 30px;
+            top: 45%;
+        }
+        .fixed li{
+            width: 10px;
+            height: 10px;
+            margin-bottom: 15px;
+            background-color: #808080;
+            border-radius: 50%;
+        }
+        .fixed .aa{
+            display: block;
+            width: 10px;
+            height: 10px;
+            margin-bottom: 15px;
+            background-color: #808080;
+            border-radius: 50%;
+        }
 
 
 

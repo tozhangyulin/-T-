@@ -8,6 +8,8 @@
     <meta name="website" content="">
     <meta name="Description" content="zy">
     <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+
 </head>
 <body>
 <!-- 导航栏部分开始 -->
@@ -15,20 +17,20 @@
     	<div class="nav">
     		<img src="../imgs/logo.jpg">
     		<ul>
-    			<li>首页</li>
-    			<li>营销手段</li>
-    			<li>服务优势</li>
-    			<li>特色功能</li>
-    			<li>技术特点</li>
-    			<li>申请加入</li>
-    			<li>登录注册</li>
-    			<li>加盟代理</li>
+    			<li class="nav_li1"><a href="#first" http-equiv="refresh">首页</a></li>
+    			<li class="nav_li2"><a href="#yxsdtwo">营销手段</a></li>
+    			<li class="nav_li3"><a href="#fwys">服务优势</a></li>
+    			<li class="nav_li4"><a href="#tsgn">特色功能</a></li>
+    			<li class="nav_li5"><a href="#jstd">技术特点</a></li>
+    			<li class="nav_li6"><a href="#sqjr">申请加入</a></li>
+    			<li class="nav_li7"><a href="#sqjr">登录注册</a></li>
+    			<li class="nav_li8"><a href="#">加盟代理</a></li>
     		</ul>
     	</div>
     </div>
 <!-- 导航栏部分结束 -->
 <!-- 首页开始 -->
-    <div class="first">
+    <div class="first click_yuan" id="first">
     	<div class="first_center">
     		<img src="../imgs/b1_01.png">
     		<img src="../imgs/b1_02.png" class="tu2">
@@ -39,7 +41,7 @@
     </div>
 <!-- 首页结束 -->
 <!-- 营销手段开始 -->
-    <div class="yxsd">
+    <div class="yxsd click_yuan" id="yxsd">
         <div class="yxsd_center">
             <img src="../imgs/b2_01.png">
             <img src="../imgs/b2_03.png">
@@ -63,7 +65,7 @@
     </div>
 <!-- 营销手段结束 -->
 <!-- 营销手段2开始 -->
-    <div class="yxsdtwo">
+    <div class="yxsdtwo click_yuan" id="yxsdtwo">
         <div class="yxsdtwo_center">
             <div class="yxsdtwo_title">
                 <p>
@@ -115,7 +117,7 @@
     </div>
 <!-- 营销手段2结束 -->
 <!-- 服务优势开始 -->
-    <div class="fwys">
+    <div class="fwys click_yuan" id="fwys">
         <div class="fwys_center">
             <div class="word">
                 <span>微信T管家服<p>务优势</p></span>
@@ -138,7 +140,7 @@
     </div>
 <!-- 服务优势结束 -->
 <!-- 特色功能开始 -->
-    <div class="tsgn">
+    <div class="tsgn click_yuan" id="tsgn">
         <div class="tsgn_center">
             <div class="word_top">
                 <p>微信T管家特色<span>功能模块</span></p>
@@ -162,7 +164,7 @@
     </div>
 <!-- 特色功能结束 -->
 <!-- 技术特点开始 -->
-    <div class="jstd">
+    <div class="jstd click_yuan" id="jstd">
         <div class="jstd_center">
             <div class="dazi">
                 <p>技术特点</p>
@@ -210,15 +212,15 @@
     </div>
 <!-- 技术特点结束 -->
 <!-- 申请加入开始 -->
-    <div class="sqjr">
+    <div class="sqjr click_yuan" id="sqjr">
         <div class="sqjr_center">
             <p>加入<span>我们</span></p>
             <div class="login">
                 <div class="zxkf"></div>
                 <div class="qq"></div>
                 <span>微信T管家会员开通请联系在线客服</span>
-                <form id="logins">
-                    <fieldset>登录<span>/login</span></fieldset>
+                <form id="logins" style="position: relative;top: -20px;">
+                    <fieldset style="position: relative;top: 15px;">登录<span>/login</span></fieldset>
                     <input type="text" name="logins_id" placeholder="用户名" id="logins_id">
                     <input type="password" name="logins_password" placeholder="密码" id="logins_password">
                     <button type="button" name="login" id="button_login">登录</button>
@@ -229,7 +231,7 @@
                     <input type="password" name="Register_password" placeholder="密码" id="Register_password">
                     <input type="password" name="Register_password" placeholder="重复密码" id="Register_password">
                     <input type="password" name="Register_password" placeholder="邮箱" id="Register_password">
-                    <button type="button" name="login" id="button_login">登录</button>
+                    <button type="button" name="login" id="button_register">注册</button>
                 </form>
             </div>
         </div>
@@ -238,10 +240,69 @@
 </body>
 <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function(){
-        // var first_center = $('.first_center')[0];
-        // console.log(first_center.children[1])
-        // $('.tu2').animate({'left':'150px'},1000);
+    $(function(){
+       $('.nav_li1').mouseover(function(){
+       $('.nav_li1').css("background-color","orange")     
+       });
+       $('.nav_li1').mouseout(function(){
+       $('.nav_li1').css("background-color","")     
+       });
+        $('.nav_li2').mouseover(function(){
+       $('.nav_li2').css("background-color","orange")     
+       });
+       $('.nav_li2').mouseout(function(){
+       $('.nav_li2').css("background-color","")     
+       });
+        $('.nav_li3').mouseover(function(){
+       $('.nav_li3').css("background-color","orange")     
+       });
+       $('.nav_li3').mouseout(function(){
+       $('.nav_li3').css("background-color","")     
+       });
+        $('.nav_li4').mouseover(function(){
+       $('.nav_li4').css("background-color","orange")     
+       });
+       $('.nav_li4').mouseout(function(){
+       $('.nav_li4').css("background-color","")     
+       });
+        $('.nav_li5').mouseover(function(){
+       $('.nav_li5').css("background-color","orange")     
+       });
+       $('.nav_li5').mouseout(function(){
+       $('.nav_li5').css("background-color","")     
+       });
+        $('.nav_li6').mouseover(function(){
+       $('.nav_li6').css("background-color","orange")     
+       });
+       $('.nav_li6').mouseout(function(){
+       $('.nav_li6').css("background-color","")     
+       });
+        $('.nav_li7').mouseover(function(){
+       $('.nav_li7').css("background-color","orange")     
+       });
+       $('.nav_li7').mouseout(function(){
+       $('.nav_li7').css("background-color","")     
+       });
+        $('.nav_li8').mouseover(function(){
+       $('.nav_li8').css("background-color","orange")     
+       });
+       $('.nav_li8').mouseout(function(){
+       $('.nav_li8').css("background-color","")     
+       });
     });
+    $(function () {
+    var ol = $("<ol class='fixed'></ol>").appendTo($("body"));
+    for (var i = 0; i < $(".click_yuan").length; i++) {
+        var li = $("<li></li>").appendTo(ol);
+        var a = $("<a class='aa'></a>").appendTo(li);
+        a.attr("id","#tz"+i);
+    // console.log(a)
+
+    }
+    // $("#tz0").click(function(){
+    //     $(".click_yuan")[0]
+    // })
+    console.log(ol[0])
+})
 </script>
 </html>
