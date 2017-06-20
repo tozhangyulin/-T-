@@ -9,7 +9,6 @@
     <meta name="Description" content="zy">
     <link rel="stylesheet" type="text/css" href="../css/index.css">
     <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
-
 </head>
 <body>
 <!-- 导航栏部分开始 -->
@@ -17,7 +16,7 @@
     	<div class="nav">
     		<img src="../imgs/logo.jpg">
     		<ul>
-    			<li class="nav_li1"><a href="#first" http-equiv="refresh">首页</a></li>
+    			<li class="nav_li1"><a href="#first">首页</a></li>
     			<li class="nav_li2"><a href="#yxsdtwo">营销手段</a></li>
     			<li class="nav_li3"><a href="#fwys">服务优势</a></li>
     			<li class="nav_li4"><a href="#tsgn">特色功能</a></li>
@@ -133,7 +132,7 @@
                 <span>全接口开发实力<p>平台稳定，建站高效，让您的微信公众平台无所不能。</p></span>
             </div>
             <div class="phone">
-                <img src="../imgs/b4_01.png">
+                <img src="../imgs/b4_01.png" style="z-index: 0;">
                 <img src="../imgs/b4_02.png">                
             </div>
         </div>
@@ -240,69 +239,36 @@
 </body>
 <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
-    $(function(){
-       $('.nav_li1').mouseover(function(){
-       $('.nav_li1').css("background-color","orange")     
-       });
-       $('.nav_li1').mouseout(function(){
-       $('.nav_li1').css("background-color","")     
-       });
-        $('.nav_li2').mouseover(function(){
-       $('.nav_li2').css("background-color","orange")     
-       });
-       $('.nav_li2').mouseout(function(){
-       $('.nav_li2').css("background-color","")     
-       });
-        $('.nav_li3').mouseover(function(){
-       $('.nav_li3').css("background-color","orange")     
-       });
-       $('.nav_li3').mouseout(function(){
-       $('.nav_li3').css("background-color","")     
-       });
-        $('.nav_li4').mouseover(function(){
-       $('.nav_li4').css("background-color","orange")     
-       });
-       $('.nav_li4').mouseout(function(){
-       $('.nav_li4').css("background-color","")     
-       });
-        $('.nav_li5').mouseover(function(){
-       $('.nav_li5').css("background-color","orange")     
-       });
-       $('.nav_li5').mouseout(function(){
-       $('.nav_li5').css("background-color","")     
-       });
-        $('.nav_li6').mouseover(function(){
-       $('.nav_li6').css("background-color","orange")     
-       });
-       $('.nav_li6').mouseout(function(){
-       $('.nav_li6').css("background-color","")     
-       });
-        $('.nav_li7').mouseover(function(){
-       $('.nav_li7').css("background-color","orange")     
-       });
-       $('.nav_li7').mouseout(function(){
-       $('.nav_li7').css("background-color","")     
-       });
-        $('.nav_li8').mouseover(function(){
-       $('.nav_li8').css("background-color","orange")     
-       });
-       $('.nav_li8').mouseout(function(){
-       $('.nav_li8').css("background-color","")     
-       });
-    });
     $(function () {
     var ol = $("<ol class='fixed'></ol>").appendTo($("body"));
     for (var i = 0; i < $(".click_yuan").length; i++) {
-        var li = $("<li></li>").appendTo(ol);
-        var a = $("<a class='aa'></a>").appendTo(li);
-        a.attr("id","#tz"+i);
-    // console.log(a)
-
+        var li = $("<li class="+"a"+"></li>").appendTo(ol);
+        var a = $("<a href="+"a1.html"+"></a>").appendTo(li);
     }
-    // $("#tz0").click(function(){
-    //     $(".click_yuan")[0]
-    // })
     console.log(ol[0])
+    $('.fixed>li').each(function(){
+        $('.fixed>li>a').css({"display":"block","width":"10px","height":"10px"})
+        $(this).click(function(){
+                console.log($(this).index())
+                switch ($(this).index()){
+                   case 0:$('.fixed>li>a').attr("href","#first"); break;
+                   case 1:$('.fixed>li>a').attr("href","#yxsdtwo"); break;
+                   case 2:$('.fixed>li>a').attr("href","#fwys"); break;
+                   case 3:$('.fixed>li>a').attr("href","#tsgn"); break;
+                   case 4:$('.fixed>li>a').attr("href","#jstd"); break;
+                   case 5:$('.fixed>li>a').attr("href","#sqjr"); break;
+                   case 6:$('.fixed>li>a').attr("href","#sqjr"); break;
+                }
+        })
+    })
+})
+$(function(){
+        $('.header>.nav>ul>li').mouseover(function(){
+              $(this).css("background-color","orange")     
+            });
+        $('.header>.nav>ul>li').mouseout(function(){
+              $(this).css("background-color","")     
+            });
 })
 </script>
 </html>
